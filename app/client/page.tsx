@@ -53,6 +53,26 @@ const clientGalleries: Record<string, ClientGallery> = {
         src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%202-tmr193QkY5f51t2aGna6X3mBfYGbtU.jpg",
         alt: "Graduation celebration with cap raised",
       },
+      {
+        id: 3,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%287%29.png-EJU1fj3yHDENzk4TbuiTKOXJUDB0uv.jpeg",
+        alt: "Graduation celebration toast with champagne in archway",
+      },
+      {
+        id: 4,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%288%29.png-Cg0KtBIwo6NBoGl7lXsboVCyncAEzd.jpeg",
+        alt: "Outdoor graduation embrace on green lawn",
+      },
+      {
+        id: 5,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%289%29.png-1kSAGT0gwStXSf42Pk8bJC7sGvp9AL.jpeg",
+        alt: "Romantic couple photo at waterfront pier",
+      },
+      {
+        id: 6,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%2810%29.png-BOpTsecfMDtjbx5263azXoihIrHj28.jpeg",
+        alt: "Romantic couple photo at waterfront with Sydney skyline",
+      },
     ],
   },
   ROTARY2024: {
