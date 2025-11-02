@@ -101,7 +101,7 @@ export function Gallery() {
   }
 
   return (
-    <section id="gallery" className="py-24 md:py-32 bg-muted/30">
+    <section id="portfolio" className="py-24 md:py-32 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-balance">Portfolio Gallery</h2>

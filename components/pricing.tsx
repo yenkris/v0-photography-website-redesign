@@ -54,14 +54,14 @@ export function Pricing() {
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />3 professionally edited photos
+                    <CheckIcon size={18} />3 professionally edited photos
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Private gallery delivery
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Includes Base Session
                   </li>
                 </ul>
@@ -84,14 +84,14 @@ export function Pricing() {
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />3 edited photos
+                    <CheckIcon size={18} />3 edited photos
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     All RAW images
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Includes Base Session
                   </li>
                 </ul>
@@ -114,15 +114,15 @@ export function Pricing() {
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     All RAW images
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Personal-use licence
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Includes Base Session
                   </li>
                 </ul>
@@ -155,15 +155,15 @@ export function Pricing() {
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Candid & key moments
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Private gallery
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Optional edit bundles
                   </li>
                 </ul>
@@ -186,15 +186,15 @@ export function Pricing() {
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Run sheet support
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Hero moments & details
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     48–72 hr preview available
                   </li>
                 </ul>
@@ -217,15 +217,15 @@ export function Pricing() {
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Comprehensive coverage
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Back-up & file safety
                   </li>
                   <li className="flex gap-2">
-                    <CheckIcon size={16} />
+                    <CheckIcon size={18} />
                     Team add-ons available
                   </li>
                 </ul>

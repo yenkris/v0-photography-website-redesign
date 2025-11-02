@@ -97,7 +97,7 @@ export function PricingCards() {
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckIcon size={18} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">All unedited images</span>
+                    <span className="text-sm">All unedited images (USB delivery — check add-ons)</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckIcon size={18} className="mt-0.5 flex-shrink-0" />
@@ -186,7 +186,11 @@ export function PricingCards() {
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckIcon size={18} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">48-72 hr preview available</span>
+                    <span className="text-sm">USB delivery available (additional fee)</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckIcon size={18} className="mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Selected images only</span>
                   </li>
                 </ul>
                 <p className="text-xs text-muted-foreground italic">For Rotary, showcases, small conferences</p>
@@ -227,9 +231,11 @@ export function PricingCards() {
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckIcon size={18} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">
-                      USB of photos (incl. if client provides stick, +$50 up to 1000 photos, +$100 for more)
-                    </span>
+                    <span className="text-sm">USB delivery available (additional fee)</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckIcon size={18} className="mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Selected images only</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <CheckIcon size={18} className="mt-0.5 flex-shrink-0" />
@@ -260,19 +266,29 @@ export function PricingCards() {
               <CardTitle className="text-xl font-bold">Add-ons</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
-              <div className="flex justify-between items-center">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
                 <span className="text-sm">Extra edits</span>
                 <span className="text-sm font-medium">$40 each</span>
               </div>
-              <div className="flex justify-between items-center">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
                 <span className="text-sm">All unedited images</span>
                 <span className="text-sm font-medium">+$120</span>
               </div>
-              <div className="flex justify-between items-center">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
                 <span className="text-sm">3 edits + all unedited images</span>
-                <span className="text-sm font-medium">+$180 (best value)</span>
+                <span className="text-sm font-medium whitespace-nowrap">
+                  +$180 <span className="text-muted-foreground">(best value)</span>
+                </span>
               </div>
-              <div className="flex justify-between items-center">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
+                <span className="text-sm">USB delivery (up to 1000 photos)</span>
+                <span className="text-sm font-medium">+$50</span>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
+                <span className="text-sm">USB delivery (1000+ photos)</span>
+                <span className="text-sm font-medium">+$100</span>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
                 <span className="text-sm">Travel (outside Sydney Metro)</span>
                 <span className="text-sm font-medium">Quoted</span>
               </div>
