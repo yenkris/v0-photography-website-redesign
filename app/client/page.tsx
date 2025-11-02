@@ -88,7 +88,7 @@ const clientGalleries: Record<string, ClientGallery> = {
   },
 }
 
-const calculateDaysRemaining = (accessCode: string): number => {
+const calculateDaysRemaining = (accessCode: string): { daysRemaining: number; isFirstLogin: boolean } => {
   const storageKey = `gallery_first_login_${accessCode}`
   const firstLoginStr = localStorage.getItem(storageKey)
 
@@ -96,7 +96,7 @@ const calculateDaysRemaining = (accessCode: string): number => {
     // First time login - store current timestamp
     const now = new Date().toISOString()
     localStorage.setItem(storageKey, now)
-    return 30 // Full 30 days on first login
+    return { daysRemaining: 30, isFirstLogin: true } // Full 30 days on first login
   }
 
   // Calculate days elapsed since first login
@@ -105,7 +105,28 @@ const calculateDaysRemaining = (accessCode: string): number => {
   const daysElapsed = Math.floor((now.getTime() - firstLogin.getTime()) / (1000 * 60 * 60 * 24))
   const daysRemaining = 30 - daysElapsed
 
-  return Math.max(0, daysRemaining) // Don't show negative days
+  return { daysRemaining: Math.max(0, daysRemaining), isFirstLogin: false } // Don't show negative days
+}
+
+const sendFirstAccessNotification = async (clientName: string, accessCode: string) => {
+  try {
+    const response = await fetch("/api/notify-first-access", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        clientName,
+        accessCode,
+        timestamp: new Date().toISOString(),
+      }),
+    })
+
+    const data = await response.json()
+    console.log("[v0] First access notification sent:", data)
+  } catch (error) {
+    console.error("[v0] Failed to send first access notification:", error)
+  }
 }
 
 export default function ClientGalleryPage() {
@@ -116,14 +137,38 @@ export default function ClientGalleryPage() {
   const [currentAccessCode, setCurrentAccessCode] = useState<string>("")
   const [daysRemaining, setDaysRemaining] = useState<number>(30)
   const [isExpired, setIsExpired] = useState(false)
+  const [firstLoginDate, setFirstLoginDate] = useState<string>("")
 
   const isViewOnlyClient = currentAccessCode === "DEMO2025" || currentAccessCode === "CLIENT001"
 
   useEffect(() => {
     if (currentAccessCode && isAuthenticated) {
-      const remaining = calculateDaysRemaining(currentAccessCode)
-      setDaysRemaining(remaining)
-      setIsExpired(remaining === 0)
+      const updateDaysRemaining = () => {
+        const { daysRemaining: remaining } = calculateDaysRemaining(currentAccessCode)
+        setDaysRemaining(remaining)
+        setIsExpired(remaining === 0)
+
+        const storageKey = `gallery_first_login_${currentAccessCode}`
+        const firstLoginStr = localStorage.getItem(storageKey)
+        if (firstLoginStr) {
+          const firstLogin = new Date(firstLoginStr)
+          const formatted = firstLogin.toLocaleString("en-AU", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true,
+          })
+          setFirstLoginDate(formatted)
+        }
+      }
+
+      updateDaysRemaining()
+
+      const interval = setInterval(updateDaysRemaining, 1000 * 60 * 60)
+
+      return () => clearInterval(interval)
     }
   }, [currentAccessCode, isAuthenticated])
 
@@ -133,11 +178,15 @@ export default function ClientGalleryPage() {
     const gallery = clientGalleries[code]
 
     if (gallery) {
-      const remaining = calculateDaysRemaining(code)
+      const { daysRemaining: remaining, isFirstLogin } = calculateDaysRemaining(code)
 
       if (remaining === 0) {
         setError("This access code has expired. Please contact us for assistance.")
         return
+      }
+
+      if (isFirstLogin) {
+        sendFirstAccessNotification(gallery.clientName, code)
       }
 
       setIsAuthenticated(true)
@@ -160,21 +209,17 @@ export default function ClientGalleryPage() {
     if (!image) return
 
     try {
-      // Fetch the image
       const response = await fetch(image.src)
       const blob = await response.blob()
 
-      // Create a temporary URL for the blob
       const url = window.URL.createObjectURL(blob)
 
-      // Create a temporary anchor element and trigger download
       const link = document.createElement("a")
       link.href = url
-      link.download = `photo-${imageId}.jpg` // Set filename
+      link.download = `photo-${imageId}.jpg`
       document.body.appendChild(link)
       link.click()
 
-      // Cleanup
       document.body.removeChild(link)
       window.URL.revokeObjectURL(url)
     } catch (error) {
@@ -187,7 +232,6 @@ export default function ClientGalleryPage() {
 
     for (const image of currentGallery.images) {
       await handleDownload(image.id)
-      // Small delay between downloads to avoid overwhelming the browser
       await new Promise((resolve) => setTimeout(resolve, 500))
     }
   }
@@ -315,7 +359,7 @@ export default function ClientGalleryPage() {
                     : currentGallery.clientName}
               </h1>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Your exclusive gallery from {currentGallery.eventDate}.{" "}
+                Your exclusive gallery from photoshoot.{" "}
                 {isViewOnlyClient ? "View your images below." : "Download your high-resolution images below."}
               </p>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full text-sm">
@@ -330,7 +374,6 @@ export default function ClientGalleryPage() {
               </div>
             </div>
 
-            {/* Download All Button */}
             {!isViewOnlyClient && (
               <div className="flex justify-center mb-8">
                 <Button size="lg" className="gap-2" onClick={handleDownloadAll}>
@@ -388,7 +431,7 @@ export default function ClientGalleryPage() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground mb-1">Access Period</p>
-                  <p>30 days from first login</p>
+                  <p>30 days from {firstLoginDate || "first login"}</p>
                 </div>
                 <div>
                   <p className="font-medium text-foreground mb-1">Image Format</p>

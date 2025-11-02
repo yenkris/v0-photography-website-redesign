@@ -2,8 +2,6 @@
 
 import type React from "react"
 
-import { ArrowRightIcon } from "./icons"
-
 export function Services() {
   const services = [
     {
@@ -25,13 +23,6 @@ export function Services() {
       image: "/pelican-wildlife-photography.jpg",
     },
   ]
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
 
   const handleContextMenu = (e: React.MouseEvent) => {
     e.preventDefault()
@@ -67,13 +58,6 @@ export function Services() {
               </div>
               <h3 className="text-2xl font-serif">{service.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="text-sm text-accent hover:underline inline-flex items-center gap-1 group"
-              >
-                More info
-                <ArrowRightIcon size={16} />
-              </button>
             </div>
           ))}
         </div>

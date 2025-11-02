@@ -147,7 +147,7 @@ export function Gallery() {
         <div className="text-center mt-12">
           <p className="text-muted-foreground">
             Want to see more?{" "}
-            <a href="#contact" className="text-accent hover:underline font-medium">
+            <a href="#hero" className="text-accent hover:underline font-medium">
               Request our full portfolio
             </a>
           </p>
