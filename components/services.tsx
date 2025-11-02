@@ -45,13 +45,13 @@ export function Services() {
   return (
     <section id="services" className="pt-12 md:pt-16 pb-24 md:pb-32 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-3xl mb-16 space-y-4">
+        <div className="max-w-3xl mx-auto mb-16 space-y-4 text-center">
           <h2 className="text-4xl md:text-5xl font-serif tracking-tight text-balance leading-tight">
             Capturing stellar moments, preserving every detail
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl">
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
           {services.map((service) => (
             <div key={service.title} className="space-y-4 group">
               <div className="relative aspect-[3/2] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500">
