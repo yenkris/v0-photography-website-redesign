@@ -75,7 +75,7 @@ export function Header() {
             scrollToSection(section)
             setIsMenuOpen(false)
           }}
-          className="text-sm font-medium hover:text-accent transition-colors"
+          className="text-sm font-medium hover:text-accent transition-colors text-left"
         >
           {children}
         </button>
@@ -85,7 +85,7 @@ export function Header() {
     return (
       <Link
         href={`/#${section}`}
-        className="text-sm font-medium hover:text-accent transition-colors"
+        className="text-sm font-medium hover:text-accent transition-colors text-left"
         onClick={() => setIsMenuOpen(false)}
       >
         {children}
@@ -158,7 +158,7 @@ export function Header() {
               <NavButton section="portfolio">Gallery</NavButton>
               <Link
                 href="/pricing"
-                className="text-sm font-medium hover:text-accent transition-colors"
+                className="text-sm font-medium hover:text-accent transition-colors text-left"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pricing
