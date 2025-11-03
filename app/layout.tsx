@@ -12,6 +12,13 @@ export const metadata: Metadata = {
   description:
     "Transform your special moments into timeless memories with professional photography services. Specializing in portraits, events, and weddings.",
   generator: "v0.app",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-icon.png",
+  },
 }
 
 export default function RootLayout({
