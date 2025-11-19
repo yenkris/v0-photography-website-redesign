@@ -86,6 +86,72 @@ const clientGalleries: Record<string, ClientGallery> = {
       { id: 5, src: "/people-rotary-event-photography.jpg", alt: "Rotary volunteers serving at BBQ event" },
     ],
   },
+  YESPCYCROTARY2025: {
+    clientName: "YES! Rotary / PCYC",
+    eventDate: "Scholarship Awards - November 2025",
+    images: [
+      {
+        id: 1,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Monika%202-L15U9Wm4V81UrLA8Y6pk2fYGLkBo4i.jpg",
+        alt: "Monika receiving The Arts scholarship award",
+      },
+      {
+        id: 2,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Yousef%201-O4PPNzhGEmHVCHDKORNCbZ6zT9xQ21.jpg",
+        alt: "Yousef receiving Education scholarship award",
+      },
+      {
+        id: 3,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tesha-qAqhh8TP6CabFgAiRq4tE05w8AlvID.jpg",
+        alt: "Tesha receiving Environment / Education scholarship award",
+      },
+      {
+        id: 4,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Monika%201-3LemajZKBFNTxczQ5GBeW2QA78wGDS.jpg",
+        alt: "Monika standing with award presenters",
+      },
+      {
+        id: 5,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lilly%202-Q0CghJEXaMjKJbrp59KpviFg3VSGzq.jpg",
+        alt: "Lilly receiving Sports scholarship award",
+      },
+      {
+        id: 6,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Yousef%202-z3gCZ7d4noYmvpddp6ZV7GSwdW1bth.jpg",
+        alt: "Yousef standing with award presenters",
+      },
+      {
+        id: 7,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lilly%201-XbMP6vJaiAFBKPS4OtoWKXf3fANa3I.jpg",
+        alt: "Lilly standing with award presenters",
+      },
+      {
+        id: 8,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%202-KKKH4mh8RmsTspp20ZcOrXpvVNFWEb.jpg",
+        alt: "Group photo of scholarship recipients with officials",
+      },
+      {
+        id: 9,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Averhry%201-AOu5gekRIE8gwDwagz9RIdXo8mkofR.jpg",
+        alt: "Averhry standing with award presenters",
+      },
+      {
+        id: 10,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Averhry%202-EhCsJrt7QNjjJjYLqIrXJSpLakLYmg.jpg",
+        alt: "Averhry receiving scholarship award",
+      },
+      {
+        id: 11,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Akshleen-lXZMtghC7JF8Ux0IOMeMwc7YPXVV16.jpg",
+        alt: "Akshleen standing with award presenters",
+      },
+      {
+        id: 12,
+        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group-ev5Kn6kZHVw8HF6ztNPTA4nojd7Bjp.jpg",
+        alt: "Large group photo of all recipients and officials",
+      },
+    ],
+  },
 }
 
 const calculateDaysRemaining = (accessCode: string): { daysRemaining: number; isFirstLogin: boolean } => {

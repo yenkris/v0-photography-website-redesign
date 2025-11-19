@@ -172,6 +172,7 @@ export default function TermsPage() {
             <section className="pt-8 border-t border-border">
               <div className="space-y-2">
                 <p className="font-medium">C.Y. Pictures</p>
+                <p className="text-xs text-muted-foreground/60">Yen Studios Pty Ltd ACN: 692874776</p>
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm text-muted-foreground">
                   <a href="mailto:hello@cypictures.com" className="hover:text-foreground transition-colors underline">
                     hello@cypictures.com
