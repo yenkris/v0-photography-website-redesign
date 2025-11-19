@@ -154,8 +154,16 @@ const clientGalleries: Record<string, ClientGallery> = {
   },
 }
 
+const getStorageKey = (accessCode: string) => {
+  // Versioning specific codes to reset their counters
+  if (accessCode === "YESPCYCROTARY2025") {
+    return `gallery_first_login_${accessCode}_v2`
+  }
+  return `gallery_first_login_${accessCode}`
+}
+
 const calculateDaysRemaining = (accessCode: string): { daysRemaining: number; isFirstLogin: boolean } => {
-  const storageKey = `gallery_first_login_${accessCode}`
+  const storageKey = getStorageKey(accessCode)
   const firstLoginStr = localStorage.getItem(storageKey)
 
   if (!firstLoginStr) {
@@ -214,7 +222,7 @@ export default function ClientGalleryPage() {
         setDaysRemaining(remaining)
         setIsExpired(remaining === 0)
 
-        const storageKey = `gallery_first_login_${currentAccessCode}`
+        const storageKey = getStorageKey(currentAccessCode)
         const firstLoginStr = localStorage.getItem(storageKey)
         if (firstLoginStr) {
           const firstLogin = new Date(firstLoginStr)
