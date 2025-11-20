@@ -24,17 +24,17 @@ const clientGalleries: Record<string, ClientGallery> = {
     images: [
       {
         id: 1,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%286%29.png-5K9Zt3cZok5HJJzqHihcbaErp9R1Og.jpeg",
+        src: "/images/untitled-20design-20-286-29.jpeg",
         alt: "Friends group on historic stone steps",
       },
       {
         id: 2,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%282%29.png-H06thIZVx244Cwj2MlYFZyDhIMR1xI.jpeg",
+        src: "/images/untitled-20design-20-282-29.jpeg",
         alt: "Friends group in urban plaza with blue flowers",
       },
       {
         id: 3,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%284%29.png-kwPAM1nzkgpZIAY8vD13G2zcNNzrKz.jpeg",
+        src: "/images/untitled-20design-20-284-29.jpeg",
         alt: "Friends on heritage staircase",
       },
     ],
@@ -45,32 +45,32 @@ const clientGalleries: Record<string, ClientGallery> = {
     images: [
       {
         id: 1,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%285%29.png-tTgl1YJ5eMNktmb5NH8wGchdm230R7.jpeg",
+        src: "/images/untitled-20design-20-285-29.jpeg",
         alt: "Graduation portrait with medal and white fur stole",
       },
       {
         id: 2,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%202-tmr193QkY5f51t2aGna6X3mBfYGbtU.jpg",
+        src: "/images/untitled-20design-202.jpg",
         alt: "Graduation celebration with cap raised",
       },
       {
         id: 3,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%287%29.png-EJU1fj3yHDENzk4TbuiTKOXJUDB0uv.jpeg",
+        src: "/images/untitled-20design-20-287-29.jpeg",
         alt: "Graduation celebration toast with champagne in archway",
       },
       {
         id: 4,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%288%29.png-Cg0KtBIwo6NBoGl7lXsboVCyncAEzd.jpeg",
+        src: "/images/untitled-20design-20-288-29.jpeg",
         alt: "Outdoor graduation embrace on green lawn",
       },
       {
         id: 5,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%289%29.png-1kSAGT0gwStXSf42Pk8bJC7sGvp9AL.jpeg",
+        src: "/images/untitled-20design-20-289-29.jpeg",
         alt: "Romantic couple photo at waterfront pier",
       },
       {
         id: 6,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%2810%29.png-BOpTsecfMDtjbx5263azXoihIrHj28.jpeg",
+        src: "/images/untitled-20design-20-2810-29.jpeg",
         alt: "Romantic couple photo at waterfront with Sydney skyline",
       },
     ],
@@ -92,62 +92,62 @@ const clientGalleries: Record<string, ClientGallery> = {
     images: [
       {
         id: 1,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Monika%202-L15U9Wm4V81UrLA8Y6pk2fYGLkBo4i.jpg",
+        src: "/images/monika-202.jpg",
         alt: "Monika receiving The Arts scholarship award",
       },
       {
         id: 2,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Yousef%201-O4PPNzhGEmHVCHDKORNCbZ6zT9xQ21.jpg",
+        src: "/images/yousef-201.jpg",
         alt: "Yousef receiving Education scholarship award",
       },
       {
         id: 3,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tesha-qAqhh8TP6CabFgAiRq4tE05w8AlvID.jpg",
+        src: "/images/tesha.jpg",
         alt: "Tesha receiving Environment / Education scholarship award",
       },
       {
         id: 4,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Monika%201-3LemajZKBFNTxczQ5GBeW2QA78wGDS.jpg",
+        src: "/images/monika-201.jpg",
         alt: "Monika standing with award presenters",
       },
       {
         id: 5,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lilly%202-Q0CghJEXaMjKJbrp59KpviFg3VSGzq.jpg",
+        src: "/images/lilly-202.jpg",
         alt: "Lilly receiving Sports scholarship award",
       },
       {
         id: 6,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Yousef%202-z3gCZ7d4noYmvpddp6ZV7GSwdW1bth.jpg",
+        src: "/images/yousef-202.jpg",
         alt: "Yousef standing with award presenters",
       },
       {
         id: 7,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lilly%201-XbMP6vJaiAFBKPS4OtoWKXf3fANa3I.jpg",
+        src: "/images/lilly-201.jpg",
         alt: "Lilly standing with award presenters",
       },
       {
         id: 8,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%202-KKKH4mh8RmsTspp20ZcOrXpvVNFWEb.jpg",
+        src: "/images/group-202.jpg",
         alt: "Group photo of scholarship recipients with officials",
       },
       {
         id: 9,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Averhry%201-AOu5gekRIE8gwDwagz9RIdXo8mkofR.jpg",
+        src: "/images/averhry-201.jpg",
         alt: "Averhry standing with award presenters",
       },
       {
         id: 10,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Averhry%202-EhCsJrt7QNjjJjYLqIrXJSpLakLYmg.jpg",
+        src: "/images/averhry-202.jpg",
         alt: "Averhry receiving scholarship award",
       },
       {
         id: 11,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Akshleen-lXZMtghC7JF8Ux0IOMeMwc7YPXVV16.jpg",
+        src: "/images/akshleen.jpg",
         alt: "Akshleen standing with award presenters",
       },
       {
         id: 12,
-        src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group-ev5Kn6kZHVw8HF6ztNPTA4nojd7Bjp.jpg",
+        src: "/images/group.jpg",
         alt: "Large group photo of all recipients and officials",
       },
     ],
@@ -157,7 +157,7 @@ const clientGalleries: Record<string, ClientGallery> = {
 const getStorageKey = (accessCode: string) => {
   // Versioning specific codes to reset their counters
   if (accessCode === "YESPCYCROTARY2025") {
-    return `gallery_first_login_${accessCode}_v2`
+    return `gallery_first_login_${accessCode}_v3`
   }
   return `gallery_first_login_${accessCode}`
 }
