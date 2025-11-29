@@ -181,6 +181,16 @@ const clientGalleries: Record<string, ClientGallery> = {
         src: "/images/pa041926.jpeg",
         alt: "Speaker discussing materials with participant during workshop",
       },
+      {
+        id: 6,
+        src: "/images/pa041938.jpg",
+        alt: "Speaker presenting technical content about AI pronunciation and speech analysis",
+      },
+      {
+        id: 7,
+        src: "/images/pa041930.jpg",
+        alt: "Interactive workshop moment with speaker and participant discussing mechanics",
+      },
     ],
   },
 }
