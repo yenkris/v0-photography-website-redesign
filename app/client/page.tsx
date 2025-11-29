@@ -152,6 +152,37 @@ const clientGalleries: Record<string, ClientGallery> = {
       },
     ],
   },
+  ISLA_SHIV: {
+    clientName: "Isla & Shiv",
+    eventDate: "Event - November 2025",
+    images: [
+      {
+        id: 1,
+        src: "/images/img-2735.jpg",
+        alt: "Speaker presenting at event with 'highs, lows & buffaloes' presentation",
+      },
+      {
+        id: 2,
+        src: "/images/img-2733.jpg",
+        alt: "Speaker smiling during presentation with microphone",
+      },
+      {
+        id: 3,
+        src: "/images/img-2736.jpg",
+        alt: "Speaker gesturing during presentation to audience",
+      },
+      {
+        id: 4,
+        src: "/images/pa041918.jpg",
+        alt: "Workshop session with speaker and participant reading 'Super Side Kicks' book",
+      },
+      {
+        id: 5,
+        src: "/images/pa041926.jpg",
+        alt: "Speaker discussing materials with participant during workshop",
+      },
+    ],
+  },
 }
 
 const getStorageKey = (accessCode: string) => {
@@ -405,6 +436,12 @@ export default function ClientGalleryPage() {
                       >
                         ROTARY2024
                       </span>
+                      <span
+                        className="font-mono text-xs font-bold bg-background px-2 py-1 rounded cursor-pointer hover:bg-accent/20 transition-colors"
+                        onClick={() => handleDemoCodeClick("ISLA_SHIV")}
+                      >
+                        ISLA_SHIV
+                      </span>
                     </div>
                   </div>
                 </CardContent>
@@ -430,7 +467,9 @@ export default function ClientGalleryPage() {
                   ? "ISLA"
                   : currentAccessCode === "CLIENT001"
                     ? "Sri & Evan"
-                    : currentGallery.clientName}
+                    : currentAccessCode === "ISLA_SHIV"
+                      ? "SHIV@ISLA"
+                      : currentGallery.clientName}
               </h1>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Your exclusive gallery from photoshoot.{" "}
