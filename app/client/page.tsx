@@ -158,27 +158,27 @@ const clientGalleries: Record<string, ClientGallery> = {
     images: [
       {
         id: 1,
-        src: "/images/img-2735.jpg",
-        alt: "Speaker presenting at event with 'highs, lows & buffaloes' presentation",
+        src: "/images/img-2733.jpg",
+        alt: "Speaker smiling and engaging with audience during presentation",
       },
       {
         id: 2,
-        src: "/images/img-2733.jpg",
-        alt: "Speaker smiling during presentation with microphone",
+        src: "/images/img-2735.jpg",
+        alt: "Speaker gesturing with hand raised during 'highs, lows & buffaloes' presentation",
       },
       {
         id: 3,
+        src: "/images/pa041918.jpeg",
+        alt: "Workshop session with speaker and participant reading 'Super Side Kicks' book",
+      },
+      {
+        id: 4,
         src: "/images/img-2736.jpg",
         alt: "Speaker gesturing during presentation to audience",
       },
       {
-        id: 4,
-        src: "/images/pa041918.jpg",
-        alt: "Workshop session with speaker and participant reading 'Super Side Kicks' book",
-      },
-      {
         id: 5,
-        src: "/images/pa041926.jpg",
+        src: "/images/pa041926.jpeg",
         alt: "Speaker discussing materials with participant during workshop",
       },
     ],
@@ -425,22 +425,10 @@ export default function ClientGalleryPage() {
                         DEMO2025
                       </span>
                       <span
-                        className="hidden font-mono text-xs font-bold bg-background px-2 py-1 rounded cursor-pointer hover:bg-accent/20 transition-colors"
-                        onClick={() => handleDemoCodeClick("CLIENT001")}
-                      >
-                        CLIENT001
-                      </span>
-                      <span
                         className="font-mono text-xs font-bold bg-background px-2 py-1 rounded cursor-pointer hover:bg-accent/20 transition-colors"
                         onClick={() => handleDemoCodeClick("ROTARY2024")}
                       >
                         ROTARY2024
-                      </span>
-                      <span
-                        className="font-mono text-xs font-bold bg-background px-2 py-1 rounded cursor-pointer hover:bg-accent/20 transition-colors"
-                        onClick={() => handleDemoCodeClick("ISLA_SHIV")}
-                      >
-                        ISLA_SHIV
                       </span>
                     </div>
                   </div>
