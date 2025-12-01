@@ -86,6 +86,252 @@ const clientGalleries: Record<string, ClientGallery> = {
       { id: 5, src: "/people-rotary-event-photography.jpg", alt: "Rotary volunteers serving at BBQ event" },
     ],
   },
+  ISLA_CP25: {
+    clientName: "ISLA Program - City of Sydney",
+    eventDate: "Welcome Event - November 2024",
+    images: [
+      {
+        id: 1,
+        src: "/images/pb293161.jpg",
+        alt: "ISLA group photo with welcome signs",
+      },
+      {
+        id: 2,
+        src: "/images/pb293172.jpg",
+        alt: "ISLA participant with Welcome to Sydney backdrop",
+      },
+      {
+        id: 3,
+        src: "/images/pb293175.jpg",
+        alt: "Participant holding Living my best life sign",
+      },
+      {
+        id: 4,
+        src: "/images/pb293195.jpg",
+        alt: "Participant with I love Australia sign",
+      },
+      {
+        id: 5,
+        src: "/images/pb293187.jpg",
+        alt: "Two ISLA volunteers together",
+      },
+      {
+        id: 6,
+        src: "/images/pb293180.jpg",
+        alt: "Participant holding Living my best life sign from behind",
+      },
+      {
+        id: 7,
+        src: "/images/pb293154.jpg",
+        alt: "ISLA group photo with colorful welcome signs",
+      },
+      {
+        id: 8,
+        src: "/images/pb293167.jpg",
+        alt: "ISLA participant with Living my best life sign",
+      },
+      {
+        id: 9,
+        src: "/images/pb293224.jpg",
+        alt: "Panel discussion with City of Sydney backdrop",
+      },
+      {
+        id: 10,
+        src: "/images/pb293205.jpg",
+        alt: "Participant holding I love Sydney sign",
+      },
+      {
+        id: 11,
+        src: "/images/pb293231.jpg",
+        alt: "Panel discussion with green City of Sydney banner",
+      },
+      {
+        id: 12,
+        src: "/images/pb293237.jpg",
+        alt: "Panelist speaking with microphone",
+      },
+      {
+        id: 13,
+        src: "/images/pb293214.jpg",
+        alt: "Three participants with G'Day mate and I love Australia signs",
+      },
+      {
+        id: 14,
+        src: "/images/pb293235.jpg",
+        alt: "Panel discussion close-up",
+      },
+      {
+        id: 15,
+        src: "/images/pb293230.jpg",
+        alt: "Full panel with moderator and speakers",
+      },
+      {
+        id: 16,
+        src: "/images/pb293288.jpg",
+        alt: "Panel from audience perspective with IR audio system",
+      },
+      {
+        id: 17,
+        src: "/images/pb293283.jpg",
+        alt: "Panelist speaking during discussion",
+      },
+      {
+        id: 18,
+        src: "/images/pb293244.jpg",
+        alt: "Panel discussion with presentation slide",
+      },
+      {
+        id: 19,
+        src: "/images/pb293258.jpg",
+        alt: "Panelist laughing during discussion",
+      },
+      {
+        id: 20,
+        src: "/images/pb293281.jpg",
+        alt: "Panel with all speakers engaged",
+      },
+      {
+        id: 21,
+        src: "/images/pb293262.jpg",
+        alt: "Panelist gesturing while speaking",
+      },
+      {
+        id: 22,
+        src: "/images/pb293299.jpg",
+        alt: "Panel discussion with ISLA banner visible",
+      },
+      {
+        id: 23,
+        src: "/images/pb293273.jpg",
+        alt: "Full panel view with moderator and speakers",
+      },
+      {
+        id: 24,
+        src: "/images/pb293277.jpg",
+        alt: "Close-up of panelist during discussion",
+      },
+      {
+        id: 25,
+        src: "/images/pb293239.jpg",
+        alt: "Panel discussion with Meet Our Panelists slide",
+      },
+      {
+        id: 26,
+        src: "/images/pb293384.jpg",
+        alt: "Audience members at ISLA event with people in background",
+      },
+      {
+        id: 27,
+        src: "/images/pb293318.jpg",
+        alt: "Panelist in green checkered blazer during conversation",
+      },
+      {
+        id: 28,
+        src: "/images/pb293302.jpg",
+        alt: "Panel discussion with three speakers on stage",
+      },
+      {
+        id: 29,
+        src: "/images/pb293317.jpg",
+        alt: "Panelist in green blazer looking down during discussion",
+      },
+      {
+        id: 30,
+        src: "/images/pb293332.jpg",
+        alt: "Panel with microphone holder and speakers engaged",
+      },
+      {
+        id: 31,
+        src: "/images/pb293383.jpg",
+        alt: "Audience members in ISLA t-shirts eating during event",
+      },
+      {
+        id: 32,
+        src: "/images/pb293347.jpg",
+        alt: "Four panelists on stage during discussion",
+      },
+      {
+        id: 33,
+        src: "/images/pb293364.jpg",
+        alt: "Panel discussion from alternate angle",
+      },
+      {
+        id: 34,
+        src: "/images/pb293380.jpg",
+        alt: "Two speakers with City banner in background",
+      },
+      {
+        id: 35,
+        src: "/images/pb293367.jpg",
+        alt: "Three panelists during event discussion",
+      },
+      {
+        id: 36,
+        src: "/images/pb293417.jpg",
+        alt: "Group celebration with hands raised at ISLA event",
+      },
+      {
+        id: 37,
+        src: "/images/pb293401.jpg",
+        alt: "Audience looking up during presentation with ISLA banner",
+      },
+      {
+        id: 38,
+        src: "/images/pb293409.jpg",
+        alt: "Full panel of five speakers on stage",
+      },
+      {
+        id: 39,
+        src: "/images/pb293408.jpg",
+        alt: "Panel members from behind during discussion",
+      },
+      {
+        id: 40,
+        src: "/images/pb293399.jpg",
+        alt: "Wide audience shot during presentation",
+      },
+      {
+        id: 41,
+        src: "/images/img-2733-2.jpg",
+        alt: "Speaker in green checkered blazer smiling with microphone",
+      },
+      {
+        id: 42,
+        src: "/images/img-2736-2.jpg",
+        alt: "Presenter with highs lows and buffaloes slide",
+      },
+      {
+        id: 43,
+        src: "/images/pb293117.jpg",
+        alt: "Portrait of speaker in green checkered blazer",
+      },
+      {
+        id: 44,
+        src: "/images/img-2726.jpg",
+        alt: "Host in striped shirt speaking with papers",
+      },
+      {
+        id: 45,
+        src: "/images/img-2728.jpg",
+        alt: "Two hosts presenting event with title slide",
+      },
+      {
+        id: 46,
+        src: "/images/img-2735-2.jpg",
+        alt: "Speaker presenting highs lows and buffaloes to audience",
+      },
+      {
+        id: 47,
+        src: "/images/img-2727.jpg",
+        alt: "Event hosts with International Student Career Panel 2025 slide",
+      },
+      {
+        id: 48,
+        src: "/images/pb293115.jpg",
+        alt: "Speaker engaging with seated audience members",
+      },
+    ],
+  },
   YESPCYCROTARY2025: {
     clientName: "YES! Rotary / PCYC",
     eventDate: "Scholarship Awards - November 2025",
@@ -467,7 +713,9 @@ export default function ClientGalleryPage() {
                     ? "Sri & Evan"
                     : currentAccessCode === "ISLA_SHIV"
                       ? "SHIV@ISLA"
-                      : currentGallery.clientName}
+                      : currentAccessCode === "ISLA_CP25"
+                        ? "ISLA Program - City of Sydney"
+                        : currentGallery.clientName}
               </h1>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Your exclusive gallery from photoshoot.{" "}

@@ -1,0 +1,36 @@
+import type { Gallery } from "./gallery-types" // Assuming Gallery type is declared in gallery-types.ts
+
+export const galleries: Gallery[] = [
+  {
+    id: "isla_cp25",
+    name: "ISLA_CP25",
+    eventDate: "2023-11-29",
+    images: [
+      "/images/pb293161.jpg",
+      "/images/pb293172.jpg",
+      "/images/pb293175.jpg",
+      "/images/pb293195.jpg",
+      "/images/pb293187.jpg",
+      "/images/pb293180.jpg",
+      "/images/pb293154.jpg",
+      "/images/pb293167.jpg",
+      "/images/pb293224.jpg",
+      "/images/pb293205.jpg",
+      "/images/pb293231.jpg",
+      "/images/pb293237.jpg",
+      "/images/pb293214.jpg",
+      "/images/pb293235.jpg",
+      "/images/pb293230.jpg",
+      "/images/pb293288.jpg",
+      "/images/pb293283.jpg",
+      "/images/pb293244.jpg",
+      "/images/pb293258.jpg",
+      "/images/pb293281.jpg",
+      "/images/pb293262.jpg",
+      "/images/pb293299.jpg",
+      "/images/pb293273.jpg",
+      "/images/pb293277.jpg",
+      "/images/pb293239.jpg",
+    ],
+  },
+]
